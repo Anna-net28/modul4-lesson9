@@ -24,9 +24,8 @@ increaseCount(num) {
 },
 
 calculateItemPrice() {
-  this.items.reduce((sum, item) => {
-    return sum += item.price * item.amount;
-  }, 0);
+  return this.items.reduce((sum, e) => sum + e.price * e.amount, 0);
+  
 },
 
 clear() {
